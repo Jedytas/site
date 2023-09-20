@@ -1,0 +1,157 @@
+body, ul, li, table, form, input, textarea {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 20px;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
+body {
+  background-color: #f2f2f2;
+  font-family: Cambria;
+}
+
+.wrapper {
+  border: 3px solid #ede8db;
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+header {
+  border: 1px solid black;
+  width: 100%;
+  padding-bottom: 50px;
+  text-align: center;
+  letter-spacing: 1px;
+  background: #efede0;
+}
+
+nav.menu {
+  text-align: right;
+  margin-top: 20px;
+}
+
+nav.menu a {
+  text-decoration: none;
+  margin: 0 10px;
+  color: black;
+  background: #e8ebef;
+  border: 1px solid black;
+}
+
+img.logo {
+  padding-top:64px;
+  float:left; 
+  width:241px;
+  height:60px;
+}
+
+/*h1{
+  max-width:800px;
+  background-color:#ccc;
+  margin: 0 auto; 
+  margin-top:20px;
+  padding:10px;
+}*/
+
+ul.linkedlist {
+  text-decoration: none;
+  color: #b12650;
+  margin: 20px 0;
+  padding-left: 20px;
+}
+
+ul.linkedlist li {
+  margin-bottom: 10px;
+}
+
+ul.linkedlist a {
+  text-decoration: none;
+  color: #b12650;
+}
+
+li a{
+    border-bottom: 1px dotted #b12650;
+}
+
+table.tabletask {
+  width: 100%;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+table.tabletask caption {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.tabletask tr:nth-child(even) {
+  background: #e8edff;
+}
+
+.tabletask tr:nth-child(odd) {
+  background: #ffffff;
+}
+
+table.tabletask th, table.tabletask td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+.logo {
+  height: auto;
+  background-color: transparent;
+}
+
+form {
+  margin-top: 20px;
+}
+
+form label {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+form input[type="radio"] {
+  display: inline;
+}
+
+form input[type="text"],
+form input[type="tel"],
+form input[type="date"],
+form select,
+form textarea {
+  width: 100%;
+  padding: 10px 0px 10px 0px;
+  margin-top: 5px;
+  margin-bottom: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: vertical;
+  background-color: #f2f2f2;
+  font-size: 18px;
+}
+
+form input[type="submit"]{
+border: 1px solid black;
+}
+
+input[type="text"]::placeholder,
+input[type="tel"]::placeholder,
+textarea::placeholder{
+    padding-left: 10px; 
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px 0;
+  background-color: #333;
+  color: #fff;
+}
+
+

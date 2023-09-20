@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Задание 2</title>
+    <link rel="stylesheet" href="css/style.css"> </head>
+
+  <body>
+    <div class="wrapper">
+      <header><a href="">
+          <img src="images/logo.png" class="logo" alt="Логотип">
+          </a>
+      	<nav class="menu"> 
+          <a href="#linkedlist">Список гиперссылок</a> 
+          <a href="#table">Таблица</a> 
+         	<a href="#form">Форма</a> </nav>
+          <div class="smt">
+          
+
+          <h1>Задание номер 2 с CSS</h1>
+        </div>
+         </header>
+      <div class="content">
+	 <a id="linkedlist"></a>
+        <ul class="linkedlist">
+          <!-- 1 -->
+          <li><a href="http://kubsu.ru/">КубГУ</a></li>
+          <!-- 2 -->
+          <li><a href="https://kubsu.ru/">КубГУ https</a></li>
+          <!-- 3 -->
+          <li>
+            <a href="https://kubsu.ru/ru"><img src="images/image.png" alt="Небо из Майнкрафта" style="width: 600px;"></a>
+          </li>
+          <!-- 4 -->
+          <li><a href="about/about.html">Сокращенная на внутренню</a></li>
+          <!-- 5 -->
+          <li><a href="index.html"> Сокращенная на главную</a></li>
+          <!-- 6 -->
+          <li><a href="#footer">Фрагмент текущей страницы</a></li>
+          <!-- 7 -->
+          <li><a href="https://vk.com/video_ext.php?oid=-30666517&id=456245816&hd=2">Ссылка с 3 параметрами</a></li>
+          <!-- 8 -->
+          <li><a href="https://moodle.kubsu.ru/enrol/index.php?id=780">Ссылка с id</a></li>
+          <!-- 9 -->
+          <li><a href="test.html"> Относительная на страницу в текущем каталоге</a></li>
+          <!-- 10 -->
+          <li><a href="./about/about.html">Относительная на страницу в каталоге about</a></li>
+          <!-- 11 -->
+          <li><a href="../index_up.html">Уровнем выше</a></li>
+          <!-- 12 -->
+          <li><a href="../../index.html">Двумя уровнями выше</a></li>
+          <!-- 13 -->
+          <li>
+            <p>Кубанский государственный университет. <a href="https://kubsu.ru/ru/fktipm">Факультет компьютерных технологий и прикладной математики</a> - 02.03.03 Математическое обеспечение и администрирование информационных систем.</p>
+          </li>
+          <!-- 14 -->
+          <li><a href="https://visualstudio.microsoft.com/ru/downloads/#picker">Ссылка на фрагмент другого сайта</a></li>
+          <!-- 15 -->
+          <li> <img src="https://younglinux.info/images/htmlcss/intro/html5_css3_logo.png" alt="Картинка" usemap="#imya">
+            <map name="imya">
+              <area shape="rect" coords="0,0,150,150" href="../index_up.html" alt="rect">
+              <area shape="circle" coords="275,100,100" href="../../index.html" alt="circle">
+            </map>
+          </li>
+          <!-- 16 -->
+          <li><a href="">Пусто</a></li>
+          <!-- 17 -->
+          <li><a> Пусто 2.0</a></li>
+          <!-- 18 -->
+          <li><a href="index.html" rel="nofollow">Запрещено переходить</a></li>
+          <!-- 19 -->
+          <li><a href="index.html"><!--<noindex>-->Запрещена индексация<!--</noindex>--></a></li>
+          <!-- 20 -->
+          <li> <b>Нумерованный список ссылок с подписями title</b>
+            <ol>
+              <li><a href="./about/about.html" title="Link 1">Один</a></li>
+              <li><a href="../index_up.html" title="Link 2">Два</a></li>
+            </ol>
+          </li>
+          <!-- 21 -->
+          <li><a href="ftp://user:123456@example.ru/examples/main.txt">Ссылка на файл на сервере FTP с авторизацией</a></li>
+        </ul>
+        <a id="table"></a>
+        <table class="tabletask">
+          <caption>Таблица</caption>
+          <tr>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+            <th>4</th>
+          </tr>
+          <tr>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+            <th>4</th>
+          </tr>
+          <tr>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+            <th>4</th>
+          </tr>
+          <tr>
+            <td colspan="2">1</td>
+            <td>2</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td colspan="2">1</td>
+            <td>2</td>
+            <td rowspan="2">3</td>
+          </tr>
+          <tr>
+            <td colspan="2">1</td>
+            <td>2</td>
+          </tr>
+        </table>
+        <a id="form"></a>
+        <form>
+          <label for="name"><b>Ваше фамилия   имя отчество:</b></label>
+          <input type="text" id="name" placeholder="Иванов Иван Иванович">
+          <br>
+          <label for="phone"><b>Введите свой номер для связи:</b></label>
+          <input type="tel" id="phone" placeholder="88005553535">
+          <br>
+          <label for="mail"><b>Введите свою почту  для связи:</b></label>
+          <input type="text" id="mail" placeholder="man@gmail.com">
+          <br>
+          <label for="date"><b>Введите свою дату рождения:</b></label><br>
+          <input type="date" id="date">
+          <br>
+          <p><b>Ваш пол:</b></p>
+          <label for="m"><b>Мужской</b></label>
+          <input type="radio" id="m" name="gender" value="m"><br>
+          <label for="w"><b>Женский</b></label>
+          <input type="radio" id="w" name="gender" value="w">
+          <br>
+          <br>
+          <label for="lang"><b> Ваш любимый язык программирования:</b></label>
+          <br>
+          <select id="lang" name="pr-ln" multiple>
+            <option value="pascal">Pascal</option>
+            <option value="c">C</option>
+            <option value="cpp">C++</option>
+            <option value="javascript">JavaScript</option>
+            <option value="php">PHP</option>
+            <option value="python">Python</option>
+            <option value="java">Java</option>
+            <option value="haskell">Haskell</option>
+            <option value="clojure">Clojure</option>
+            <option value="prolog">Prolog</option>
+            <option value="scala">Scala</option>
+          </select>
+          <br>
+          <label for="bio"><b>Биография</b></label>
+          <br>
+          <textarea id="bio" name="bio" rows=4></textarea>
+          <br>
+          <label><b>С условиями ознакомлен</b></label>
+          <input type="checkbox" id="contract" name="contract">
+          <br>
+          <br>
+          <input type="submit" value="Подтвердить"> </form>
+      </div>
+    </div>
+    <footer>
+      <a id="footer"></a>
+      <p>&#169; Урюпин Николай 2023 </footer>
+  </body>
+
+</html>
